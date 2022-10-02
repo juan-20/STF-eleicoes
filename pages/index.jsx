@@ -10,7 +10,7 @@ export default function Home({results}) {
     <p>Porcentagem</p>
     </div>
    {results.cand.map((result) => (
-    <div className="table">
+    <div key={result.seq} className="table">
     <p className="candidate">{result.nm.replace('&apos;', '\'')}</p>
     <p className="percentage">{result.pvap}</p>
     </div>
